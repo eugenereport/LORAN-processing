@@ -22,7 +22,7 @@ def calculate():
             # Performing the calculation with the initial guess (the center point of the zone)
             initial_guess = [float(emulation_zone_size['width']) / 2, float(emulation_zone_size['height']) / 2]
             x_opt, y_opt, iterations = loran_calculator.custom_least_squares(initial_guess)
-
+            print("iterations",iterations)
             return jsonify({'x': float(x_opt), 'y': float(y_opt)}), 200
         except KeyError as e:
             return jsonify({'error': f'Missing key: {e}'}), 400

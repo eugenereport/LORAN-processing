@@ -1,18 +1,7 @@
 ## Титул
-
-<br>
-
-<p align="center" style="font-size: 30px;">
-    <b>Розробка додатку для візуалізації вимірювань LORAN</b>
-</p>
-<p align="center" style="font-size: 24px;">
-    Виконав студент: Прокопенко Євгеній ІПЗ-4.04
-</p>
-<p align="center" style="font-size: 24px;">
-    з дисципліни: <b>"Розробка та програмування координатних систем"</b>
-</p>
-
-<br>
+## **Розробка додатку для візуалізації вимірювань LORAN**
+## Виконав студент: Прокопенко Євгеній ІПЗ-4.04
+## з дисципліни: **"Розробка та програмування координатних систем"**
 
 ## Мета
 
@@ -215,7 +204,7 @@ this.websocket.onmessage = (event) => {
 
 #### 6. Оновлення конфігурації
 
-Для керуванням форми оновлення конфігурації радара, було створено клас `GPSConfig`, файл `public/src/GPSConfig.js`.
+Для керуванням форми оновлення конфігурації радара, було створено клас `Config`, файл `public/src/Config.js`.
 
 **Основні властивості:**
 - `formElement`: HTML-елемент форми, з яким працює клас;
@@ -271,21 +260,13 @@ this.websocket.onmessage = (event) => {
 
 **Результат:**
 
-<br>
-<div align="center">
-    <img src="screenshots/1_LORAN_test.gif" alt="Тестування LORAN" width="700px"  >
-</div>
-<br>
+![Тестування LORAN](screenshots/1_LORAN_test.gif)
 
 Спробуємо змінити параметри `LORAN`.
 
 **Результат:**
 
-<br>
-<div align="center">
-    <img src="screenshots/2_LORAN_config_change_test.gif" alt="Перевірка оновлення конфігурації" width="700px"  >
-</div>
-<br>
+![Перевірка оновлення конфігурації](screenshots/2_LORAN_config_change_test.gif)
 
 **LORAN працює, запити зміни конфігурації виконуються!**
 
